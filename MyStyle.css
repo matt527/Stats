@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+<style>
+		body{
+			background-color: rgb(66, 62, 60);
+			color: white;
+		}
+		#Information{
+			background-color: inherit;
+			position: relative;
+  			text-align: center;
+ 			height: 900px;
+			width: 600px;
+		}
+		#BikeSVG{
+			position: absolute;
+			width: 20%;
+			height: 30%;
+		}
+		#RunSVG{
+			position: absolute;
+			width: 20%;
+		}
+
+		.File{
+			display: block;
+			color: rgb(252,78,5);
+			background-color: inherit;
+			background-repeat: no-repeat;
+			border-radius: 0;
+			border: 0px;	
+		}
+
+		#Mountain{
+			position: absolute;
+			width: 15%;
+			z-index: 5;
+		}
+		
+		.Stat{
+			position: absolute;
+			width: inherit;
+			top: 0px;
+		}
+		
+		.button {
+			display: inline-block;
+			text-align: center;
+			vertical-align: middle;
+			padding: 5px 7px;
+			border: 0px solid #061f17;
+			border-radius: 0px;
+			background: #fc4f05;
+			background: -webkit-gradient(linear, left top, left bottom, from(#fc4f05), to(#fc4b05));
+			background: -moz-linear-gradient(top, #fc4f05, #fc4b05);
+			background: linear-gradient(to bottom, #fc4f05, #fc4b05);
+			font: normal normal bold 20px arial;
+			color: #ffffff;
+			text-decoration: none;
+		}
+		.button:hover,
+		.button:focus {
+			border: 0px solid ##07221a;
+			background: #ff5f06;
+			background: -webkit-gradient(linear, left top, left bottom, from(#ff5f06), to(#ff5a06));
+			background: -moz-linear-gradient(top, #ff5f06, #ff5a06);
+			background: linear-gradient(to bottom, #ff5f06, #ff5a06);
+			color: #ffffff;
+			text-decoration: none;
+		}
+		.button:active {
+			background: #972f03;
+			background: -webkit-gradient(linear, left top, left bottom, from(#972f03), to(#fc4b05));
+			background: -moz-linear-gradient(top, #972f03, #fc4b05);
+			background: linear-gradient(to bottom, #972f03, #fc4b05);
+		}
+		
+		
+		
+	</style>
