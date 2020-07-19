@@ -12,14 +12,13 @@
 		body{
 			background-color: rgb(66, 62, 60);
 			color: white;
-			text-align: center;
 		}
 		#Information{
 			background-color: inherit;
-			background-position: center;
-			background-repeat: no-repeat;
-			width: auto;
-			height: 1000px;
+			position: relative;
+  			text-align: center;
+ 			height: 900px;
+			width: 600px;
 		}
 
 		.File{
@@ -30,15 +29,21 @@
 			border-radius: 0;
 			border: 0px;	
 		}
-		#ElevationInfoGraphic{
-			background-image: url(Sheffield.png);
-			background-repeat: no-repeat;
-			background-position: center;
-			width: auto;
-			height: auto;
+		
+
+		#Mountain{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			vertical-align: middle;
 		}
-		#Elevation{
-			position: relative;
+		
+		.Stat{
+			position: absolute;
+			width: inherit;
+			top: 0px;
 		}
 		
 		.button {
@@ -83,18 +88,16 @@
       <input name="FileSelect" type="file" accept=".csv" class="form-control File" id="FileSelect" onChange="fileAdded()">
     </div>
     <div id="Information">
-      <div id="Distance">Distance</div>
-      <div id="Time">Time</div>
-      <div id="Summit">Summit</div>
-      <div id="Runs">Runs</div>
-      <div id="Rides">Rides</div>
-      <div id="Countries">Number of Countries</div>
-	  <div id="ElevationInfoGraphic">
-		<div id="Elevation">Elevation</div>
-	  </div>
-<!--		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1297.36 1631.42"><defs><style>.cls-1,.cls-2{fill:#fff;}.cls-2{stroke:#000;}.cls-2,.cls-3{stroke-miterlimit:10;}.cls-3{fill:#fc4e05;stroke:#fc4e05;}</style></defs><g id="Layer_2" data-name="Layer 2"><polygon class="cls-1" points="908.51 1.9 714.71 633.84 816.65 702.77 905.33 625.06 1007.22 691.45 1051.36 601.32 908.51 1.9"/><polyline class="cls-2" points="714.71 633.84 908.51 1.9 1051.36 601.32"/></g><g id="Layer_1" data-name="Layer 1"><polygon class="cls-1" points="562.7 609.75 483.02 388.18 374.47 667.9 476 729.36 562.7 609.75"/><polyline class="cls-2" points="374.47 667.9 483.02 388.18 562.7 609.75"/><polygon class="cls-3" points="1051.36 601.32 1296.73 1630.92 0.73 1630.92 357.37 711.96 374.47 667.9 476 729.36 562.7 609.75 648.73 848.96 714.71 633.84 816.65 702.77 905.33 625.06 1007.22 691.45 1051.36 601.32"/></g></svg>
--->	
-
+     
+	  <svg xmlns="http://www.w3.org/2000/svg" class="Mountain" viewBox="0 0 1702.09 2553.31"><defs><style>.cls-1,.cls-2{fill:#fff;}.cls-2{stroke:#000;}.cls-2,.cls-3{stroke-miterlimit:10;}.cls-3{fill:#fc4e05;stroke:#fc4e05;}</style></defs><g id="Layer_2" data-name="Layer 2"><polygon class="cls-1" points="1192.01 2.13 937.66 991.8 1071.45 1099.75 1187.83 978.05 1321.54 1082.02 1379.47 940.87 1192.01 2.13"/><polyline class="cls-2" points="937.66 991.92 1192.01 2.25 1379.47 940.37"/><polyline class="cls-2" points="491.16 1044.63 633.62 606.56 738.19 953.56"/></g><g id="Layer_1" data-name="Layer 1"><polygon class="cls-1" points="738.19 953.56 633.62 606.56 491.16 1044.63 624.4 1140.88 738.19 953.56"/><polygon class="cls-3" points="1379.47 940.37 1701.48 2552.8 0.69 2552.8 468.71 1113.64 491.16 1044.63 624.4 1140.88 738.19 953.56 851.08 1328.19 937.66 991.29 1071.45 1099.24 1187.83 977.54 1321.54 1081.51 1379.47 940.37"/></g></svg>
+	 <div class="Stat" id="Distance">Distance</div> 
+	  <div class="Stat" id="Time">Time</div>
+      <div class="Stat" id="Summit">Summit</div>
+      <div class="Stat" id="Runs">Runs</div>
+      <div class="Stat" id="Rides">Rides</div>
+      <div class="Stat" id="Countries">Number of Countries</div>
+	  <div class="Stat" id="Elevation">Elevation</div>
+		
 </div>
 </body>
 </html>
