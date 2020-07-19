@@ -22,9 +22,12 @@
 		}
 		#BikeSVG{
 			position: absolute;
-			
-			top: 10%;
-			width: 25%
+			width: 20%;
+			height: 30%;
+		}
+		#RunSVG{
+			position: absolute;
+			width: 20%;
 		}
 
 		.File{
@@ -38,11 +41,9 @@
 
 		#Mountain{
 			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			vertical-align: middle;
+			top: 35%;
+			width: 15%;
+			z-index: 5;
 		}
 		
 		.Stat{
@@ -93,17 +94,36 @@
       <input name="FileSelect" type="file" accept=".csv" class="form-control File" id="FileSelect" onChange="fileAdded()">
     </div>
     <div id="Information">
-		<div id="BikeSVG">
-			<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458.12 275.72"><defs><style>.bk-1,.bk-3,.bk-4{fill:none;}.bk-1,.bk-2,.bk-3,.bk-4{stroke:#fc4e05;stroke-width:5px;}.bk-1,.bk-2,.bk-4{stroke-miterlimit:10;}.bk-2{fill:#fc4e05;}.bk-3,.bk-4{stroke-linecap:round;}.cls-3{stroke-linejoin:round;}</style></defs><circle class="bk-1" cx="98.33" cy="175.75" r="95.83"/><circle class="bk-2" cx="98.33" cy="175.75" r="15.82"/><path class="bk-1" d="M101.34,177.39H233.62a4,4,0,0,0,3.45-2l82-139.48a4,4,0,0,0-3.45-6H175.72L97.83,171.46A4,4,0,0,0,101.34,177.39Z"/><path class="bk-1" d="M235.91,177.39,175.76,30a1,1,0,0,0-.09-.21L166.35,11"/><path class="bk-1" d="M361.65,36"/><path class="bk-3" d="M361.12,182.1,313.81,4.33c-.35,0,38.7-6.62,46,5.26,9.2,15-4.2,22.72-14.54,24"/><line class="bk-4" x1="137.52" y1="11.03" x2="195.18" y2="11.03"/><circle class="bk-1" cx="359.79" cy="177.39" r="95.83"/><circle class="bk-2" cx="360.79" cy="181.74" r="15.82"/></svg>
+		<div id="RideNumber">
+			<div id="BikeSVG" class="SVGBike">
+				<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458.12 275.72"><defs><style>.bk-1,.bk-3,.bk-4{fill:none;}.bk-1,.bk-2,.bk-3,.bk-4{stroke:#fc4e05;stroke-width:5px;}.bk-1,.bk-2,.bk-4{stroke-miterlimit:10;}.bk-2{fill:#fc4e05;}.bk-3,.bk-4{stroke-linecap:round;}.cls-3{stroke-linejoin:round;}</style></defs><circle class="bk-1" cx="98.33" cy="175.75" r="95.83"/><circle class="bk-2" cx="98.33" cy="175.75" r="15.82"/><path class="bk-1" d="M101.34,177.39H233.62a4,4,0,0,0,3.45-2l82-139.48a4,4,0,0,0-3.45-6H175.72L97.83,171.46A4,4,0,0,0,101.34,177.39Z"/><path class="bk-1" d="M235.91,177.39,175.76,30a1,1,0,0,0-.09-.21L166.35,11"/><path class="bk-1" d="M361.65,36"/><path class="bk-3" d="M361.12,182.1,313.81,4.33c-.35,0,38.7-6.62,46,5.26,9.2,15-4.2,22.72-14.54,24"/><line class="bk-4" x1="137.52" y1="11.03" x2="195.18" y2="11.03"/><circle class="bk-1" cx="359.79" cy="177.39" r="95.83"/><circle class="bk-2" cx="360.79" cy="181.74" r="15.82"/></svg>
+			</div>
+				<div class="Stat" id="Rides">
+				  Rides
+				</div>
+			</div>
+		<div id="RunNumber">
+			<div id="RunSVG">
+				<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 407.85"><defs><style>.run-1{fill:#fc4e05;}.run-1,.run-2{stroke:#fc4e05;stroke-linecap:round;stroke-linejoin:round;stroke-width:15px;}.run-2{fill:none;}</style></defs><circle class="run-1" cx="309.15" cy="67.5" r="30"/><polyline class="run-2" points="278.33 117.02 159.58 117.02 159.58 204.52"/><polyline class="run-2" points="159.58 257.97 295 256.6 218.96 360.77"/><polyline class="run-2" points="432.5 154.52 328.33 206.6 278.33 117.02 159.58 257.97 7.5 400.35"/><path class="run-1" d="M336.15,40.5"/><line class="run-1" x1="232.95" y1="170.88" x2="262.25" y2="136.1"/></svg>
+			</div>
+			<div class="Stat" id="Runs">
+				Runs
+			</div>
 		</div>
-		
-	  <svg xmlns="http://www.w3.org/2000/svg" class="Mountain" viewBox="0 0 1702.09 2553.31"><defs><style>.cls-1,.cls-2{fill:#fff;}.cls-2{stroke:#000;}.cls-2,.cls-3{stroke-miterlimit:10;}.cls-3{fill:#fc4e05;stroke:#fc4e05;}</style></defs><g id="Layer_2" data-name="Layer 2"><polygon class="cls-1" points="1192.01 2.13 937.66 991.8 1071.45 1099.75 1187.83 978.05 1321.54 1082.02 1379.47 940.87 1192.01 2.13"/><polyline class="cls-2" points="937.66 991.92 1192.01 2.25 1379.47 940.37"/><polyline class="cls-2" points="491.16 1044.63 633.62 606.56 738.19 953.56"/></g><g id="Layer_1" data-name="Layer 1"><polygon class="cls-1" points="738.19 953.56 633.62 606.56 491.16 1044.63 624.4 1140.88 738.19 953.56"/><polygon class="cls-3" points="1379.47 940.37 1701.48 2552.8 0.69 2552.8 468.71 1113.64 491.16 1044.63 624.4 1140.88 738.19 953.56 851.08 1328.19 937.66 991.29 1071.45 1099.24 1187.83 977.54 1321.54 1081.51 1379.47 940.37"/></g></svg>
+		<div id="ElevationGain">
+				<div id="Mountain">
+				  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1702.09 2553.31"><defs><style>.cls-1,.cls-2{fill:#fff;}.cls-2{stroke:#000;}.cls-2,.cls-3{stroke-miterlimit:10;}.cls-3{fill:#fc4e05;stroke:#fc4e05;}</style></defs><g id="Layer_2" data-name="Layer 2"><polygon class="cls-1" points="1192.01 2.13 937.66 991.8 1071.45 1099.75 1187.83 978.05 1321.54 1082.02 1379.47 940.87 1192.01 2.13"/><polyline class="cls-2" points="937.66 991.92 1192.01 2.25 1379.47 940.37"/><polyline class="cls-2" points="491.16 1044.63 633.62 606.56 738.19 953.56"/></g><g id="Layer_1" data-name="Layer 1"><polygon class="cls-1" points="738.19 953.56 633.62 606.56 491.16 1044.63 624.4 1140.88 738.19 953.56"/><polygon class="cls-3" points="1379.47 940.37 1701.48 2552.8 0.69 2552.8 468.71 1113.64 491.16 1044.63 624.4 1140.88 738.19 953.56 851.08 1328.19 937.66 991.29 1071.45 1099.24 1187.83 977.54 1321.54 1081.51 1379.47 940.37"/></g></svg>
+				</div>
+				<div class="Stat" id="Summit">
+					Summit
+				</div>
+				<div class="Stat" id="Elevation">
+					Elevation
+				</div>
+		</div>
 	 <div class="Stat" id="Distance">Distance</div> 
 	 <div class="Stat" id="Time">Time</div>
-	<div class="Stat" id="Elevation">Elevation</div>
-      <div class="Stat" id="Summit">Summit</div>
-      <div class="Stat" id="Runs">Runs</div>
-      <div class="Stat" id="Rides">Rides</div>
+		
       <div class="Stat" id="Countries">Number of Countries</div>
 	 
 </div>
