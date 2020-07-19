@@ -16,9 +16,12 @@ function fileAdded(screencontent){
 		}
 		delete Data[""]
 	//	console.log(Data)
+		var vpos =20
 		for(var element in Data){
 			//console.log(element)
 			let id=element
+			document.getElementById(element).style.top= vpos+"px"
+			vpos+= 50
 			if(element==="Elevation"){
 				let timesUpMountain = parseFloat(Data[element])/1085 //Height of Snowdon in M
 			//	console.log(timesUpMountain)
