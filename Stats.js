@@ -35,19 +35,20 @@ function fileAdded(screencontent){
 		btn.className="button"
 		//btn.onclick= production
 		//document.getElementById("FileInput").appendChild(btn);
-		var useWidth = document.getElementById("Information").offsetWidth;
-		var useHeight = document.getElementById("Information").offsetHeight
-		console.log(useHeight)
+		var elmnt = document.getElementById("Information");
+		var useHeight = elmnt.scrollHeight;
+		var useWidth = elmnt.scrollWidth;
+//		console.log(useHeight)
 		let screencontent = html2canvas(document.getElementById("Information"),{useCORS: true,allowTaint: true,foreignObjectRendering: true, width: useWidth, height:useHeight, backgroundcolor:null,}).then(function(canvas) {
 			screencontent = new Image()
 			screencontent.src = canvas.toDataURL('image/jpeg', 1.0);
-			console.log(screencontent)
-			console.log(screencontent.src)
-			console.log("Screenshot")
+//			console.log(screencontent)
+//			console.log(screencontent.src)
+//			console.log("Screenshot")
 			let btn = document.createElement("Button")
 			btn.innerHTML="Download"
 			btn.className="button"
-			console.log("HI")
+	//		console.log("HI")
 			btn.onclick= production
 			document.getElementById("FileInput").appendChild(btn);
 			function production(){
@@ -57,7 +58,7 @@ function fileAdded(screencontent){
 				a.href = screencontent.src;
 				a.setAttribute("download", "Test123456");
 				a.click();
-				console.log("Download")
+	//			console.log("Download")
 		}
 		})
 	//	numbers.splice(0,1)
